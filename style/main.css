@@ -166,31 +166,4 @@
     font-size: 1rem;
   }
 
-/* Мобилна адаптация */
-@media (max-width: 600px) {
-  .task-input {
-    flex-direction: column;
-    align-items: stretch;
-  }
 
-  .task-input input[type="date"],
-  .task-input input[type="time"],
-  .task-input input[type="text"],
-  .task-input button {
-    width: 100%;
-    font-size: 1rem;
-  }
-
-  .task-input input,
-  .task-input button {
-    padding: 0.8rem;
-  }
-
-  .tabs {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-}
-
-  
-  
