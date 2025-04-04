@@ -161,7 +161,7 @@ li.completed {
 }
 
 /* Мобилен изглед */
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   .task-input {
     flex-direction: column;
     align-items: stretch;
@@ -193,7 +193,7 @@ li.completed {
     font-size: 0.85rem;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   .task-input button {
     width: fit-content;
     padding: 0.5rem 1.5rem;
