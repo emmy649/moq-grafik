@@ -202,17 +202,8 @@
   .task-input button {
     font-size: 0.95rem;
   }
-}
-.input-group {
-  display: flex;
-  flex-direction: column;
-  gap: 0.2rem;
-}
 
-.input-group label {
-  font-size: 0.85rem;
-  color: var(--muted);
-}
+
 
 
 
