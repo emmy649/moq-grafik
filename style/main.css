@@ -161,23 +161,26 @@ li.completed {
 }
 
 /* Мобилен изглед */
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .task-input {
     flex-direction: column;
     align-items: stretch;
+    gap: 0.8rem;
   }
 
   .task-input input,
   .task-input input[type="date"],
-  .task-input input[type="time"],
-  .task-input button {
+  .task-input input[type="time"] {
     width: 100%;
     font-size: 1rem;
-    height: 2.6rem;
+    padding: 0.5rem 0.8rem;
+    height: auto; /* премахва насилената височина */
   }
 
   .task-input button {
-    margin-top: 0.5rem;
+    width: fit-content;
+    padding: 0.45rem 1.2rem;
+    font-size: 0.95rem;
     align-self: center;
   }
 
@@ -193,14 +196,8 @@ li.completed {
     font-size: 0.85rem;
   }
 }
-@media (max-width: 500px) {
-  .task-input button {
-    width: fit-content;
-    padding: 0.5rem 1.5rem;
-    font-size: 0.95rem;
-    align-self: center;
-  }
-}
+
+ 
 
 
 
