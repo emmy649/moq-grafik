@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Моят дневен график</title>
+  <link rel="stylesheet" href="style/main.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Моят дневен график</h1>
+
+    <div class="tabs">
+      <button onclick="switchTab('tasks')">📝 Задачи</button>
+      <button onclick="switchTab('schedule')">⏰ График</button>
+      <button onclick="switchTab('habits')">🌿 Режим</button>
+    </div>
+
+    <div id="tab-content">
+
+      <!-- ЗАДАЧИ -->
+<div id="tasks" class="tab">
+    <div class="task-input">
+      <input type="text" id="taskInput" placeholder="Добави задача...">
+      <input type="date" id="taskDate">
+      <button onclick="addTask()">Добави</button>
+    </div>
+    <ul id="taskList"></ul>
+  </div>
+  
+          
+
+      <!-- ГРАФИК -->
+<div id="schedule" class="tab hidden">
+    <div class="task-input">
+      <input type="time" id="scheduleTime">
+      <input type="text" id="scheduleText" placeholder="Какво ще правиш...">
+      <button onclick="addSchedule()">Добави</button>
+    </div>
+    <ul id="scheduleList"></ul>
+  </div>
+  
+
+      <!-- РЕЖИМ -->
+<div id="habits" class="tab hidden">
+    <div class="task-input">
+      <input type="text" id="habitInput" placeholder="Добави навик...">
+      <button onclick="addHabit()">Добави</button>
+    </div>
+    <ul id="habitList"></ul>
+  </div>
+  
+
+  <script src="js/app.js"></script>
+</body>
+</html>
