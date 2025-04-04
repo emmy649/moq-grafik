@@ -182,7 +182,7 @@
 .task-input input[type="date"],
 .task-input input[type="time"] {
   flex: 1 1 120px;
-  min-width: 100px;
+  min-width: 120px;
 }
 
 .task-input button {
@@ -202,6 +202,16 @@
   .task-input button {
     font-size: 0.95rem;
   }
+}
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.input-group label {
+  font-size: 0.85rem;
+  color: var(--muted);
 }
 
 
