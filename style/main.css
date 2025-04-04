@@ -165,22 +165,23 @@ li.completed {
   .task-input {
     flex-direction: column;
     align-items: stretch;
-    gap: 0.8rem;
+    gap: 0.6rem;
   }
 
   .task-input input,
   .task-input input[type="date"],
   .task-input input[type="time"] {
     width: 100%;
-    font-size: 1rem;
-    padding: 0.5rem 0.8rem;
-    height: auto; /* премахва насилената височина */
+    font-size: 0.95rem;
+    padding: 0.4rem 0.6rem;
+    height: auto;
+    line-height: 1.4;
   }
 
   .task-input button {
     width: fit-content;
-    padding: 0.45rem 1.2rem;
-    font-size: 0.95rem;
+    padding: 0.4rem 1rem;
+    font-size: 0.9rem;
     align-self: center;
   }
 
@@ -192,10 +193,12 @@ li.completed {
 
   .tabs button {
     flex: 1;
-    padding: 0.4rem;
-    font-size: 0.85rem;
+    padding: 0.3rem;
+    font-size: 0.8rem;
   }
 }
+
+    
 
  
 
