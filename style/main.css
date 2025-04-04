@@ -166,6 +166,43 @@
     font-size: 1rem;
   }
   
-  
+  .task-input {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  align-items: center;
+}
+
+.task-input input[type="text"] {
+  flex: 2 1 200px;
+  min-width: 150px;
+}
+
+.task-input input[type="date"],
+.task-input input[type="time"] {
+  flex: 1 1 120px;
+  min-width: 100px;
+}
+
+.task-input button {
+  flex: 0 0 auto;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+}
+
+/* Адаптация за тесни екрани */
+@media (max-width: 450px) {
+  .task-input {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .task-input input,
+  .task-input button {
+    font-size: 0.95rem;
+  }
+}
+
 
 
