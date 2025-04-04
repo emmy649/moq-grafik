@@ -3,7 +3,7 @@
   --surface: #1e1e1e;
   --primary: #4caf50;
   --accent: #03dac6;
-  --danger: #2c2c2c;
+  --danger: #af382f;
   --text: #f0f0f0;
   --muted: #a0a0a0;
 }
@@ -32,10 +32,10 @@ h1 {
   font-size: 1.8rem;
 }
 
+/* Tabs */
 .tabs {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
   gap: 1rem;
   margin-bottom: 2rem;
 }
@@ -56,6 +56,7 @@ h1 {
   color: #000;
 }
 
+/* Tab content */
 .tab {
   display: block;
 }
@@ -64,57 +65,36 @@ h1 {
   display: none;
 }
 
-.task-input button {
-  padding: 0.5rem 1rem;
-  font-size: 0.95rem;
-  border-radius: 6px;
-  background-color: var(--primary);
-  color: white;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  align-self: flex-start;
-  flex: 0 0 auto;
-  max-width: 100%;
+/* Задачи */
+.task-input {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
 }
 
-
-.task-input input,
-.task-input textarea,
-.task-input button {
+.task-input input {
+  flex: 1;
   padding: 0.6rem;
-  font-size: 1rem;
-  border-radius: 8px;
-  border: 1px solid #444;
   background-color: #2c2c2c;
   color: var(--text);
-  flex: 1;
-  min-width: 120px;
+  border: 1px solid #444;
+  border-radius: 8px;
+  font-size: 1rem;
 }
 
 .task-input button {
+  padding: 0.6rem 1.2rem;
   background-color: var(--primary);
   color: white;
   border: none;
+  border-radius: 8px;
   cursor: pointer;
+  font-size: 1rem;
   transition: background-color 0.3s ease;
-  flex: 0 0 auto;
 }
 
 .task-input button:hover {
   background-color: #388e3c;
-}
-
-.input-group {
-  display: flex;
-  flex-direction: column;
-  gap: 0.2rem;
-}
-
-.input-group label {
-  font-size: 0.85rem;
-  color: var(--muted);
-  margin-left: 0.2rem;
 }
 
 ul {
@@ -156,55 +136,46 @@ li.completed {
 }
 
 .delete:hover {
+  background-color: #9f3131;
+}
+
+#schedule input[type="time"] {
   background-color: #2c2c2c;
+  color: var(--text);
+  border: 1px solid #444;
+  border-radius: 8px;
+  padding: 0.5rem;
+  font-size: 1rem;
 }
 
-@media (max-width: 600px) {
-  .task-input {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  .task-input input,
-  .task-input button {
-    width: 100%;
-    font-size: 1rem;
-  }
-
-  .tabs {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-
-  /* === ТАБОВЕ === */
-.tabs {
-  display: flex;
-  justify-content: space-between;
-  gap: 0.5rem;
-  margin-bottom: 2rem;
-  flex-wrap: nowrap;
+#habits input[type="text"] {
+  background-color: #2c2c2c;
+  color: var(--text);
+  border: 1px solid #444;
+  border-radius: 8px;
+  padding: 0.5rem;
+  font-size: 1rem;
 }
 
-.tabs button {
-  flex: 1;
-  max-width: 160px;
-  font-size: 0.9rem;
-  padding: 0.4rem 0.8rem;
-  border-radius: 6px;
-}
-
-/* === РАВНА ВИСОЧИНА ЗА ПОЛЕТА === */
-.task-input input[type="text"],
 .task-input input[type="date"] {
-  height: 2.6rem;
+  background-color: #2c2c2c;
+  color: var(--text);
+  border: 1px solid #444;
+  border-radius: 8px;
+  padding: 0.5rem;
+  font-size: 1rem;
 }
 
-/* === ПО-МАЛЪК БУТОН === */
-.task-input button {
-  padding: 0.5rem 1rem;
-  font-size: 0.95rem;
-  border-radius: 6px;
+.task-input input[type="date"] {
+  background-color: #2c2c2c;
+  color: var(--text);
+  border: 1px solid #444;
+  border-radius: 8px;
+  padding: 0.5rem;
+  font-size: 1rem;
 }
+
+
 
 
     
