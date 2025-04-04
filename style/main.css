@@ -64,13 +64,20 @@ h1 {
   display: none;
 }
 
-.task-input {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin-bottom: 1.5rem;
-  align-items: flex-end;
+.task-input button {
+  padding: 0.5rem 1rem;
+  font-size: 0.95rem;
+  border-radius: 6px;
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: flex-start;
+  flex: 0 0 auto;
+  max-width: 100%;
 }
+
 
 .task-input input,
 .task-input textarea,
