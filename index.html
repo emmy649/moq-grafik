@@ -20,25 +20,36 @@
 
       <!-- ЗАДАЧИ -->
 <div id="tasks" class="tab">
-    <div class="task-input">
-      <input type="text" id="taskInput" placeholder="Добави задача...">
+  <div class="task-input">
+    <input type="text" id="taskInput" placeholder="Добави задача...">
+
+    <div class="input-group">
+      <label for="taskDate">Дата:</label>
       <input type="date" id="taskDate">
-      <button onclick="addTask()">Добави</button>
     </div>
-    <ul id="taskList"></ul>
+
+    <button onclick="addTask()">Добави</button>
   </div>
+  <ul id="taskList"></ul>
+</div>
+
   
           
 
       <!-- ГРАФИК -->
 <div id="schedule" class="tab hidden">
-    <div class="task-input">
+  <div class="task-input">
+    <div class="input-group">
+      <label for="scheduleTime">Час:</label>
       <input type="time" id="scheduleTime">
-      <input type="text" id="scheduleText" placeholder="Какво ще правиш...">
-      <button onclick="addSchedule()">Добави</button>
     </div>
-    <ul id="scheduleList"></ul>
+
+    <input type="text" id="scheduleText" placeholder="Какво ще правиш...">
+    <button onclick="addSchedule()">Добави</button>
   </div>
+  <ul id="scheduleList"></ul>
+</div>
+
   
 
       <!-- РЕЖИМ -->
@@ -54,3 +65,10 @@
   <script src="js/app.js"></script>
 </body>
 </html>
+
+
+   
+  
+          
+
+   
