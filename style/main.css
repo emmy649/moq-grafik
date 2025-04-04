@@ -165,7 +165,23 @@
     padding: 0.5rem;
     font-size: 1rem;
   }
-  
+  @media (max-width: 600px) {
+  .task-input {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .task-input input,
+  .task-input button {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .tabs {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
   
 
 
